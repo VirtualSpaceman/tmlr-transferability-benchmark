@@ -1,0 +1,48 @@
+{
+"prefix_colors": ["darkorange", "dodgerblue"],
+"prefix_summarize_all": true,
+"col_groups" : {
+    "1": {"header": "Generalist"},
+    "2": {"header": "Specialist/Natural"},
+    "3": {"header": "Specialist/Artefacts"},
+    "4": {"header": "Specialist/Medical"},
+    "5": {"header": ""}
+},
+"row_groups" : {
+    "1": {"header": "BL"},
+    "2": {"header": "SOTA"},
+    "3": {"header": "BBB"},
+    "4": {"header": "BBB Ablat. & Accret."}
+},
+"cols": [
+    {"group":  1, "dataset": "caltech101",         "header": "Cal-101"},
+    {"group":  1, "dataset": "sun397",             "header": "SUN397"},
+    {"group":  1, "dataset": "voc2007",            "header": "VOC 2007"},
+    {"group":  2, "dataset": "flowers102",         "header": "Ox.Flowers"},
+    {"group":  2, "dataset": "oxfordpets",         "header": "Ox.Pets"},
+    {"group":  3, "dataset": "aircraft",           "header": "Aircraft"},
+    {"group":  3, "dataset": "dtd",                "header": "DTD"},
+    {"group":  3, "dataset": "stanfordcars",       "header": "Stan.Cars"},
+    {"group":  4, "dataset": "brain_tumor_kaggle", "header": "BrainTumor"},
+    {"group":  4, "dataset": "breakhis",           "header": "BreakHis"},
+    {"group":  4, "dataset": "skin_splits",        "header": "ISIC 19"},
+    {"group":  5, "summary": "Average",            "header": "Averaged"},
+    {"group":  6, "dataset": "OVERALL",            "header": "Combined"}
+],
+"rows": [
+    {"group":  1, "scorer": "imagenet",           "header": "ImageNet",         "prefixes": ["", null]},
+    {"group":  1, "scorer": "ncti_score",         "header": "NCTI",             "prefixes": ["", null]},
+    {"group":  1, "scorer": "etran_energy_score", "header": "ETran",            "prefixes": ["", null]},
+    {"group":  1, "scorer": "pactran_score",      "header": "PACTran",          "prefixes": ["", null]},
+    {"group":  1, "scorer": "gbc_score",          "header": "GBC",              "prefixes": ["", null]},
+    {"group":  1, "scorer": "parc_score",         "header": "PARC",             "prefixes": ["", null]},
+    {"group":  1, "scorer": "nleep_score",        "header": "NLEEP",            "prefixes": ["", null]},
+    {"group":  1, "scorer": "leep_score",         "header": "LEEP",             "prefixes": ["", null]},
+    {"group":  1, "scorer": "logme_score",        "header": "LogME",            "prefixes": ["", null]},
+    {"group":  1, "scorer": "tmi_score",          "header": "TMI",              "prefixes": ["", null]},
+    {"group":  1, "scorer": "nce_score",          "header": "NCE",              "prefixes": ["", null]},
+    {"group":  1, "scorer": "sfda_score",         "header": "SFDA",             "prefixes": ["", null]},
+    {"group":  1, "scorer": "hscore_score",       "header": "H-Score",          "prefixes": ["", null]},
+    {"group":  1, "scorer": "reg_hscore_score",   "header": "R.H-Score",        "prefixes": ["", null]}
+]
+}

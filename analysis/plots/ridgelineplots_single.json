@@ -1,0 +1,29 @@
+{
+"prefix_colors": ["darkorange", "dodgerblue"],
+"prefix_summarize_all": true,
+"col_groups" : {
+    "1": {"header": "Generalist"},
+    "2": {"header": "Specialist/Natural"},
+    "3": {"header": "Specialist/Artefacts"},
+    "4": {"header": "Specialist/Medical"},
+    "5": {"header": ""}
+},
+"row_groups" : {
+    "1": {"header": "BL"},
+    "2": {"header": "SOTA"},
+    "3": {"header": "BBB"},
+    "4": {"header": "BBB Ablat. & Accret."}
+},
+"cols": [
+    {"group":  1, "dataset": "sun397",             "header": "SUN397"}
+],
+"rows": [
+    {"group":  1, "scorer": "imagenet",           "header": "ImageNet",      "prefixes": ["", null]},
+    {"group":  2, "scorer": "pactran_score",      "header": "PACTran",       "prefixes": ["", "bh3_I+"]},
+    {"group":  3, "scorer": "BEST",               "header": "BtB + 3 Top",      "prefixes": [null, "bh3_"]},
+    {"group":  3, "scorer": "I+BEST",             "header": "BtB + 3 Top + I",    "prefixes": [null, "bh3_"]},
+    {"group":  4, "scorer": "MID",                "header": "7 Mid Scorers",   "prefixes": [null, "bh3_"]},
+    {"group":  4, "scorer": "WORST",              "header": "3 Bottom Scorers", "prefixes": [null, "bh3_"]},
+    {"group":  4, "scorer": "I+WORST",            "header": "3 Bottom + I",       "prefixes": [null, "bh3_"]}
+]
+}

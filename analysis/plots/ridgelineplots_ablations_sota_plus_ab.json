@@ -1,0 +1,60 @@
+{
+"prefix_colors": ["darkorange", "dodgerblue"],
+"prefix_summarize_all": true,
+"col_groups" : {
+    "1": {"header": "Generalist"},
+    "2": {"header": "Specialist/Natural"},
+    "3": {"header": "Specialist/Artefacts"},
+    "4": {"header": "Specialist/Medical"},
+    "5": {"header": ""}
+},
+"row_groups" : {
+    "1": {"header": "BL"},
+    "2": {"header": "SOTA"},
+    "3": {"header": "BBB"},
+    "4": {"header": "BBB Ablat. & Accret."}
+},
+"cols": [
+    {"group":  1, "dataset": "caltech101",         "header": "Cal-101"},
+    {"group":  1, "dataset": "sun397",             "header": "SUN397"},
+    {"group":  1, "dataset": "voc2007",            "header": "VOC 2007"},
+    {"group":  2, "dataset": "flowers102",         "header": "Ox.Flowers"},
+    {"group":  2, "dataset": "oxfordpets",         "header": "Ox.Pets"},
+    {"group":  3, "dataset": "aircraft",           "header": "Aircraft"},
+    {"group":  3, "dataset": "dtd",                "header": "DTD"},
+    {"group":  3, "dataset": "stanfordcars",       "header": "Stan.Cars"},
+    {"group":  4, "dataset": "brain_tumor_kaggle", "header": "BrainTumor"},
+    {"group":  4, "dataset": "breakhis",           "header": "BreakHis"},
+    {"group":  4, "dataset": "skin_splits",        "header": "ISIC 19"},
+    {"group":  5, "summary": "Average",            "header": "Averaged"},
+    {"group":  6, "dataset": "OVERALL",            "header": "Combined"}
+],
+"rows": [
+    {"group":  1, "scorer": "imagenet",           "header": "ImageNet",         "prefixes": ["", null]},
+    {"group":  2, "scorer": "ncti_score",         "header": "NCTI",             "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "etran_energy_score", "header": "ETran",            "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "pactran_score",      "header": "PACTran",          "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "gbc_score",          "header": "GBC",              "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "parc_score",         "header": "PARC",             "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "nleep_score",        "header": "NLEEP",            "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "leep_score",         "header": "LEEP",             "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "logme_score",        "header": "LogME",            "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "tmi_score",          "header": "TMI",              "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "nce_score",          "header": "NCE",              "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "sfda_score",         "header": "SFDA",             "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "hscore_score",       "header": "H-Score",          "prefixes": ["", "bh3_I+"]},
+    {"group":  2, "scorer": "reg_hscore_score",   "header": "R.H-Score",        "prefixes": ["", "bh3_I+"]},
+    {"group":  3, "scorer": "BEST",               "header": "BtB + 3 Top",      "prefixes": [null, "bh3_"]},
+    {"group":  3, "scorer": "overall_scorer",     "header": "Overall (3 Top)",  "prefixes": [null, ""]},
+    {"group":  3, "scorer": "per_scorer_scorer",  "header": "Per Scorer (3 Top)","prefixes": [null, ""]},
+    {"group":  3, "scorer": "per_scorer_dataset_scorer",         "header": "Per Scorer,Datset. (3 Top)",            "prefixes": [null, ""]},
+    {"group":  3, "scorer": "lsq_scorer",         "header": "Least Sq. (3 Top)", "prefixes": [null, ""]},
+    {"group":  3, "scorer": "svm_scorer",         "header": "SVM (3 Top)",       "prefixes": [null, ""]},
+    {"group":  4, "scorer": "I+BEST",             "header": "BtB + 3 Top + I",   "prefixes": [null, "bh3_"]},
+    {"group":  4, "scorer": "overall_+I_scorer",         "header": "Overall (3 Top+I)",   "prefixes": [null, ""]},
+    {"group":  4, "scorer": "per_scorer_+I_scorer",         "header": "Per Scorer (3 Top+I)",            "prefixes": [null, ""]},
+    {"group":  4, "scorer": "per_scorer_+I_dataset_scorer",         "header": "Per Scorer,Datset. (3 Top+I)",            "prefixes": [null, ""]},
+    {"group":  4, "scorer": "lsq_+I_scorer",         "header": "Least Sq. (3 Top+I)",            "prefixes": [null, ""]},
+    {"group":  4, "scorer": "svm_+I_scorer",      "header": "SVM (3 Top+I)",       "prefixes": [null, ""]}
+]
+}
